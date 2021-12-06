@@ -1,0 +1,1 @@
+git clone 'https://ilhwan-yu:skdml12!@github.nhnent.com/infrasolution/ngeoip-api.git'
