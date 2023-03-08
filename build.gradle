@@ -63,5 +63,5 @@ task wrapper(type: Wrapper) {
 }
 // end::wrapper[]
 jar {
-   enabled = true
+   enabled = false
 }
