@@ -35,8 +35,8 @@ jobs:
       run: mkdir -p deploy
         
     # Jar 파일 복사
-    - name: Copy war
-      run: cp ./build/libs/*.war ./deploy
+    - name: Copy jar
+      run: cp ./build/libs/*.jar ./deploy
 
     - name: Make zip file
       run: zip -r ./coinTalk.zip ./deploy
