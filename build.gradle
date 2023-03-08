@@ -62,6 +62,3 @@ task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
 // end::wrapper[]
-jar {
-   enabled = false
-}
