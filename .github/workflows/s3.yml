@@ -41,7 +41,7 @@ jobs:
     # 현재 directory를 현재 경로에 build.zip 이름으로 압축
     # -r 하위경로까지 모두다라는 옵션 
     - name: Compress the result into zip file
-      run: zip -r ./build.zip .
+      run: war -r ./build.war .
       shell: bash
     
     # aws 인증서비스
