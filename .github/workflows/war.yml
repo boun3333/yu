@@ -36,16 +36,6 @@ jobs:
         java-version: 1.8
         java-package: jdk 
         architecture: x64
-
-    # gradlew 실행권한 주기
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-      shell: bash
-    
-    # 빌드하기
-    - name: Build with Gradle
-      run: ./gradlew build
-      shell: bash
     
     # zip으로 압축
     # 현재 directory를 현재 경로에 build.zip 이름으로 압축
