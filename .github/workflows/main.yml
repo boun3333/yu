@@ -41,7 +41,7 @@ jobs:
       run: cp ./build/libs/*.jar ./deploy
 
     - name: Make zip file
-      run: zip -r ./coinTalk.zip ./deploy ./appspec.yml
+      run: zip -r ./coinTalk.zip ./deploy ./appspec.yml ./scripts
       shell: bash
 
     - name: Configure AWS credentials
