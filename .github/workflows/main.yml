@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 env:
-  S3_BUCKET_NAME: cointalk-deploy
+  S3_BUCKET_NAME: aws-hw-log
   CODE_DEPLOY_APP_NAME: test
   DEPLOYMENT_GROUP_NAME: testtt
   PROJECT_NAME: yu_project
@@ -55,4 +55,4 @@ jobs:
       run: aws s3 cp --region ap-northeast-2 ./coinTalk.zip s3://aws-hw-log/
       
     - name: Code Deploy
-      run: aws deploy create-deployment --application-name $CODE_DEPLOY_APP_NAME --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name $DEPLOYMENT_GROUP_NAME --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=$PROJECT_NAME/coinTalk.zip
+      run: aws deploy create-deployment --application-name $CODE_DEPLOY_APP_NAME --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name $DEPLOYMENT_GROUP_NAME --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=/coinTalk.zip
