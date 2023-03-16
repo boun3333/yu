@@ -1,14 +1,7 @@
 #!/usr/bin/env bash
-t=`ps -efa | grep springboots2idemo | grep -v grep | awk '{print $1}'`
+sh /home/ec2-user/test.sh
+sleep 5
 REPOSITORY=/home/ec2-user/test
-if [ -z $t ];then
-   echo "Tomcat  was not started."
-else
- p=`ps -efa | grep springboots2idemo | grep -v grep | awk '{print $2}'`
- echo $p
- kill -9 $p
- echo "tomcat killllllll"
-fi
 cd $REPOSITORY
 ls -al
 cd /home/ec2-user/test/deploy
