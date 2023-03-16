@@ -8,8 +8,7 @@ else
  kill -9 $p
  echo "tomcat killllllll"
 fi
-REPOSITORY=/home/ec2-user/test
+REPOSITORY=/home/ec2-user/test/deploy
 cd $REPOSITORY
 ls -al
-cd /home/ec2-user/test/deploy
 nohup java -jar springboots2idemo-0.1.1-SNAPSHOT.jar /dev/null 2> /dev/null < /dev/null &
