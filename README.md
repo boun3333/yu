@@ -4,7 +4,7 @@ This is a Spring Boot Example Application
 
 ## How to deploy
 
-### Create New OpenShift Project
+### Create New OpenShift Projecterfer
 
 ```bash
 oc new-project example-spring-boot
